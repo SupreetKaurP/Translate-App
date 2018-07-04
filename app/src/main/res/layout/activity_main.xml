@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Languages"
+        android:layout_marginTop="70dp"
+        />
+
+    <EditText
+        android:id="@+id/textbox1"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+
+        android:hint="Enter text to translate!"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/edittextbackground"
+        android:gravity="top|left"
+        android:inputType="text|textMultiLine"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:entries="@array/Languages"
+        />
+
+    <EditText
+        android:gravity="top|left"
+        android:id="@+id/textbox2"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:hint="Translated text!"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/edittextbackground"
+        android:textStyle="bold"
+        />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+
+        android:text="TRANSLATE" />
+
+</RelativeLayout>
